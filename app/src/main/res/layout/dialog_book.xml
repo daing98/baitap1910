@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CAC2C2"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nhập mã sách: ">
+    </TextView>
+
+    <EditText
+        android:id="@+id/edtNhapmasach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nhập tên sách: ">
+    </TextView>
+    <EditText
+        android:id="@+id/edtNhaptieude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nhập mã tác giả:">
+    </TextView>
+    <EditText
+        android:id="@+id/edtTentacgia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+
+
+
+        <Button
+            android:id="@+id/btnSelect"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Select" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="102dp"
+            android:layout_height="wrap_content"
+            android:text="Save" />
+
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:text="Update" />
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:text="Delete" />
+
+
+
+    </LinearLayout>
+    <GridView
+        android:id="@+id/grvList"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_weight="0"
+        android:columnWidth="50dp"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="20dp" />
+
+</LinearLayout>
